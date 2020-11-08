@@ -11,8 +11,10 @@ font-family: 'Open Sans Condensed', sans-serif;
 
 body {
   background-color: #f7f4f4;
-  height: 3900px;
+  height: 4500px;
 }
+
+
 
 .nav-bar {
   display: flex;
@@ -21,10 +23,13 @@ body {
   width: 100%;
   margin: 0;
   padding: 0 0 0 0;
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0.95;
 }
 
 h1 {
@@ -53,7 +58,7 @@ ul.nav-ting {
   list-style: none;
   justify-content: space-around;
   width: 30%;
-  position: absolute;
+  position: fixed;
   left: 65%;
 }
 
@@ -209,6 +214,7 @@ h2.our-apartments{
 }
 
 
+
 #apartment1{
 
   background-color: #535355;
@@ -272,6 +278,7 @@ h2.our-apartments{
   width: auto;
 }
 
+
 .address{
   list-style: none;
   font-size: 20px;
@@ -282,8 +289,6 @@ h2.our-apartments{
   background-color: #535355;
   color: white;
   border-radius: 5px;
-  margin-right: 380px;
-  margin-left: 380px;
 }
 
 .hr3{
@@ -336,9 +341,46 @@ ul.list{
   background-color: #535355;
   color: white;
   border-radius: 5px;
-  margin-right: 380px;
-  margin-left: 380px;
   position: relative;
   top:350px;
+}
+
+
+
+.email-input{
+
+  width: 400px;
+}
+
+
+.youtube{
+
+  position: absolute;
+  margin-bottom:0;
+
+}
+
+
+@media (max-width: 750px) {
+
+  .main{
+
+    transform: scale(0.8);
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .apartment-selector{
+
+    transform:scale(0.7);
+    width: 700px;
+  }
+
+  ul.nav-ting{
+
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+  }
+    
 }
 /* DO NOT REMEMBER TO INSERT THE MEDIA QUERIES*/
